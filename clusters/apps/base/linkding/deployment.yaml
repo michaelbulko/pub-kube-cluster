@@ -17,17 +17,10 @@ spec:
           image: sissbruecker/linkding:1.31.0
           ports:
             - containerPort: 9090
-
----
-
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: linkding-data-pvc
-    namespace: linkding
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 1Gi
+          volumeMounts:
+            - name: linkding-data
+            - mountPath: /etc/linkding/data
+        volumes:
+          - name: linkding-data
+            persistentVolumeClaim:
+              claimName: linkding-data-pvc
