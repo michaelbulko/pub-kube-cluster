@@ -1,0 +1,32 @@
+# Vim
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Kubernetes secrets / sensitive files
+*.secret
+*.secrets
+secrets.yaml
+secret.yaml
+
+# Environment files
+.env
+.env.local
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Kustomize build output
+kustomization_output.yaml
+
+# Temp files
+*.tmp
+*.bak
+*.log
