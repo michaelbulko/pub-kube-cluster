@@ -5,5 +5,5 @@ metadata:
   namespace: renovate
 data:
   RENOVATE_AUTODISCOVER: "false"
-  RENOVATE_GIT_AUTHOR: "Mikey's Reno Bot <bot@renovateapp.com>"
+  RENOVATE_GIT_AUTHOR: "Reno Bot <bot@renovateapp.com>"
   RENOVATE_PLATFORM: "github"
